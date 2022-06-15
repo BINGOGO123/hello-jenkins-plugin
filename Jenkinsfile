@@ -2,4 +2,6 @@
  See the documentation for more options:
  https://github.com/jenkins-infra/pipeline-library/
 */
-buildPlugin(useContainerAgent: true, jdkVersions: [11])
+buildPlugin(useContainerAgent: true, configurations: [
+  [ platform: "linux", jdk: "11", jenkins: null ]
+])
